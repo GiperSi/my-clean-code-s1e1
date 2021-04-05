@@ -33,18 +33,20 @@ var createNewTaskElement=function(taskString){
     var deleteButtonImg=document.createElement("img");//delete button image
 
     label.innerText=taskString;
-    label.className='task';
+    label.className='task label';
 
     //Each elements, needs appending
     checkBox.type="checkbox";
+    checkBox.className="task-checkbox";
     editInput.type="text";
-    editInput.className="task";
+    editInput.className="task task-text";
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
-    editButton.className="edit-task";
+    editButton.className="edit-task edit-btn";
 
-    deleteButton.className="delete-task";
+    deleteButton.className="delete-task delete-btn";
     deleteButtonImg.src='./remove.svg';
+    deleteButtonImg.className="delete-button-image";
     deleteButton.appendChild(deleteButtonImg);
 
 
@@ -70,6 +72,7 @@ var addTask=function(){
     bindTaskEvents(listItem, taskCompleted);
 
     taskInput.value="";
+    listItem.className="task-list";
 
 }
 
@@ -82,7 +85,7 @@ var editTask=function(){
 
     var listItem=this.parentNode;
 
-    var editInput=listItem.querySelector('input[type=text]');
+    var editInput=listItem.querySelector('.task-text');
     var label=listItem.querySelector("label");
     var editBtn=listItem.querySelector(".edit-task");
     var containsClass=listItem.classList.contains("edit-task-mode");

@@ -13,11 +13,11 @@
 }
 
 .header
-.header-background {
+.header__background {
   width: 100%;
 }
 
-.header-info-link {
+.header__info-link {
   font-family: fantasy, cursive;
 }
 
@@ -35,7 +35,7 @@
   margin: 0 auto 0;
 }
 
-.task-input {
+.task__input {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
@@ -54,17 +54,17 @@
   list-style: none;
 }
 
-.task-text,
-.task-checkbox,
-.add-btn,
-.edit-btn,
-.delete-btn {
+.task__text,
+.task__checkbox,
+.add-section__btn,
+.task__edit-btn,
+.task__delete-btn {
   outline: none;
 }
 
-.add-btn,
-.edit-btn,
-.delete-btn {
+.add-section__btn,
+.task__edit-btn,
+.task__delete-btn {
   background: none;
   border: 0px;
   color: #888;
@@ -73,9 +73,9 @@
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
-.add-btn:hover,
-.edit-btn:hover,
-.delete-btn:hover {
+.add-section__btn:hover,
+.task__edit-btn:hover,
+.task__delete-btn:hover {
   color: #3a3a3a;
 }
 
@@ -91,7 +91,7 @@
   text-transform: uppercase;
 }
 
-.task-text {
+.task__text {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -105,7 +105,7 @@
   color: #888;
 }
 
-.task-text:focus {
+.task__text:focus {
   color: #333;
 }
 
@@ -116,9 +116,9 @@
 }
 
 .main
-.add-btn:hover,
-.edit-btn:hover,
-.delete-btn:hover {
+.add-section__btn:hover,
+.task__edit-btn:hover,
+.task__delete-btn:hover {
   color: #0fc57c;
 }
 
@@ -134,7 +134,7 @@
 }
 
 .task
-.task-checkbox {
+.task__checkbox {
   margin: 0 10px;
 }
 
@@ -147,24 +147,24 @@
 }
 
 .task
-.task-text {
+.task__text {
   width: 226px;
 }
 
 .task >
-.delete-btn:hover {
+.task__delete-btn:hover {
   color: #cf2323;
 }
 
-.delete-btn
-.delete-button-image {
+.task__delete-btn
+.task__delete-button-image {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.delete-btn
-.delete-button-image:hover {
+.task__delete-btn
+.task__delete-button-image:hover {
   transform: rotateZ(0);
 }
 
@@ -178,13 +178,13 @@
 /* Edit Task */
 .task-list
 .task
-.task-text {
+.task__text {
   display: none;
 }
 
 .task-list
 .edit-task-mode
-.task-text {
+.task__text {
   display: inline-block;
   width: 224px;
 }

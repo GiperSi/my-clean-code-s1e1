@@ -10,7 +10,8 @@
     display: block;
     text-align: right;
 }
-.header .header-background {
+.header
+.header-background {
     width: 100%;
 }
 .header-info-link {
@@ -42,13 +43,20 @@
     margin: 0;
     padding: 0px;
 }
-.task-list, .task-section-name {
+.task-list,
+.task-section-name {
     list-style: none;
 }
-.task-text, .task-checkbox, .add-btn, .edit-btn, .delete-btn {
+.task-text,
+.task-checkbox,
+.add-btn,
+.edit-btn,
+.delete-btn {
     outline: none;
 }
-.add-btn, .edit-btn, .delete-btn {
+.add-btn,
+.edit-btn,
+.delete-btn {
     background: none;
     border: 0px;
     color: #888;
@@ -57,7 +65,9 @@
     font-family: Lato, sans-serif;
     cursor: pointer;
 }
-.add-btn:hover, .edit-btn:hover, .delete-btn:hover {
+.add-btn:hover,
+.edit-btn:hover,
+.delete-btn:hover {
     color: #3a3a3a;
 }
 /* Heading */
@@ -95,7 +105,10 @@
 .task-text#new-task {
     width: 318px;
 }
-.main > .add-btn:hover, .edit-btn:hover, .delete-btn:hover {
+.main
+.add-btn:hover,
+.edit-btn:hover,
+.delete-btn:hover {
     color: #0fc57c;
 }
 
@@ -113,46 +126,59 @@
     vertical-align: middle;
 }
 
-.task-list > .task-checkbox {
+.task-list
+.task-checkbox {
     margin: 0 10px;
 }
-.task-list > .label {
+.task-list
+.label {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
     width: 226px;
 }
-.task-list >    .task-text {
+.task-list
+.task-text {
     width: 226px;
 }
-.task-list > .delete-btn:hover {
+.task-list >
+.delete-btn:hover {
     color: #cf2323;
 }
-.delete-btn .delete-button-image {
+.delete-btn
+.delete-button-image {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
-.delete-btn .delete-button-image:hover {
+.delete-btn
+.delete-button-image:hover {
     transform: rotateZ(0);
 }
 
 /* Completed */
-.task-list-wrapper#complete-section-wrapper .label {
+#complete-section-wrapper
+.label {
     text-decoration: line-through;
     color: #888;
 }
 
 /* Edit Task */
-.task-list-wrapper .task-list .task-text {
+.task-list-wrapper
+.task-list
+.task-text {
     display: none;
 }
 
-.task-list-wrapper .task-list.edit-task-mode .task-text {
+.task-list-wrapper
+.edit-task-mode
+.task-text {
     display: inline-block;
     width: 224px;
 }
 
-.task-list-wrapper .task-list.edit-task-mode .label {
+.task-list-wrapper
+.edit-task-mode
+.label {
     display: none;
 }
